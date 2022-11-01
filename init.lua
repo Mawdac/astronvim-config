@@ -26,7 +26,7 @@ local config = {
   },
 
   -- Set colorscheme to use
-  colorscheme = "tokyonight-night",
+  colorscheme = "duskfox",
 
   -- Add highlight groups in any theme
   highlights = {
@@ -201,7 +201,12 @@ local config = {
       ["<leader>bc"] = { "<cmd>BufferLinePickClose<cr>", desc = "Pick to close" },
       ["<leader>bj"] = { "<cmd>BufferLinePick<cr>", desc = "Pick to jump" },
       ["<leader>bt"] = { "<cmd>BufferLineSortByTabs<cr>", desc = "Sort by tabs" },
-      ["<leader>tr"] = { function() astronvim.toggle_term_cmd "~/.rbenv/shims/irb" end, desc = "ToggleTerm ruby" },
+      ["<leader>tr"] = {
+        function() astronvim.toggle_term_cmd "~/.rbenv/shims/irb" end,
+        desc = "ToggleTerm ruby",
+      },
+      ["<leader>gg"] = { function() astronvim.toggle_term_cmd "lz" end, desc = "ToggleTerm lazygit" },
+      ["<leader>tl"] = { function() astronvim.toggle_term_cmd "lz" end, desc = "ToggleTerm lazygit" },
       ["<leader>tc"] = { function() astronvim.toggle_term_cmd "lzc" end, desc = "ToggleTerm lazyconfig" },
       ["<leader>tb"] = { function() astronvim.toggle_term_cmd "btop" end, desc = "ToggleTerm btop" },
       ["<leader>tt"] = { function() astronvim.toggle_term_cmd "tt" end, desc = "Toggleterm taskwarrior" },
@@ -217,7 +222,7 @@ local config = {
   -- Configure plugins
   plugins = {
     init = {
-      { "folke/tokyonight.nvim" },
+      { "EdenEast/nightfox.nvim" },
       { "blankname/vim-fish" },
       { "charmbracelet/tree-sitter-vhs" },
 
