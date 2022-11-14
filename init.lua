@@ -26,7 +26,7 @@ local config = {
   },
 
   -- Set colorscheme to use
-  colorscheme = "duskfox",
+  colorscheme = "catppuccin-mocha",
 
   -- Add highlight groups in any theme
   highlights = {
@@ -222,9 +222,8 @@ local config = {
   -- Configure plugins
   plugins = {
     init = {
-      { "EdenEast/nightfox.nvim" },
+      { "catppuccin/nvim" },
       { "blankname/vim-fish" },
-      { "charmbracelet/tree-sitter-vhs" },
 
       -- You can disable default plugins as follows:
       -- ["goolord/alpha-nvim"] = { disable = true },
