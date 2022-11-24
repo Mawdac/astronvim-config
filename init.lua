@@ -221,6 +221,7 @@ local config = {
     init = {
       { "catppuccin/nvim" },
       { "blankname/vim-fish" },
+      { "alexghergh/nvim-tmux-navigation" },
 
       -- You can disable default plugins as follows:
       -- ["goolord/alpha-nvim"] = { disable = true },
